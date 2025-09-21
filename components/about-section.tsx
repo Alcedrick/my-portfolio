@@ -1,11 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { FadeIn } from "./fade-in"
-import { FloatingElements } from "./floating-elements"
+
 
 export function AboutSection() {
   return (
     <section id="about" className="py-20 bg-muted/30 relative">
-      <FloatingElements />
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn delay={200}>
@@ -20,7 +20,7 @@ export function AboutSection() {
                 <Card className="hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                   <CardContent className="p-8">
                     <div className="w-full h-64 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 shadow-md">
-                      <img src="/me2.jpeg" alt="John Doe - About Me" className="w-full h-full object-cover" />
+                      <img src="/me.jpg" alt="" className="w-full h-full object-cover" />
                     </div>
                   </CardContent>
                 </Card>
