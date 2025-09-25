@@ -6,7 +6,8 @@ export function Footer() {
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Switch from 1 to 3 columns only at md */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
             <div>
               <h3 className="text-lg font-semibold text-primary mb-4">Alcedrick Garcia</h3>
               <p className="text-muted-foreground text-pretty">
@@ -34,30 +35,31 @@ export function Footer() {
 
             <div>
               <h3 className="text-lg font-semibold mb-4">Connect</h3>
-              <div className="flex space-x-4">
+              {/* Center icons on mobile, left-align on larger screens */}
+              <div className="flex justify-center sm:justify-start space-x-6">
                 <Link href="https://github.com/Alcedrick" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Github className="h-5 w-5" />
+                  <Github className="h-6 w-6" />
                   <span className="sr-only">GitHub</span>
                 </Link>
                 <Link
                   href="https://linkedin.com/in/alcedrick-garcia/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <Linkedin className="h-6 w-6" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
                 <Link
                   href="mailto:alcedrickgarcia@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Mail className="h-5 w-5" />
+                  <Mail className="h-6 w-6" />
                   <span className="sr-only">Email</span>
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+          <div className="border-t mt-8 pt-8 text-center text-muted-foreground text-sm">
             <p>&copy; 2025 Alcedrick Garcia. All rights reserved.</p>
           </div>
         </div>
