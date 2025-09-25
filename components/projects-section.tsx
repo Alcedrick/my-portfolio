@@ -25,13 +25,13 @@ const projects = [
     githubUrl: "https://github.com/avzyl/CEU_Inv_Sys",
   },
   {
-    title: "Avesta",
+    title: "LH44",
     description:
-      "A Bank Queuing System that streamlines customer service by managing queues efficiently, reducing wait times, and enhancing overall user experience.",
-    image: "/avesta.png",
-    technologies: ["PHP", "CSS", "MySQL", "Bootstrap"],
-    liveUrl: "https://bsitport2026.com/group2/website/avesta/",
-    githubUrl: "https://github.com/avzyl/Avesta",
+      "A Lewis Hamilton Clothing App that offers a wide range of merchandise, including apparel, accessories, and collectibles, for fans of the legendary Formula 1 driver.",
+    image: "/44+.png",
+    technologies: ["Figma", "UI/UX Design", "Prototyping"],
+    liveUrl: "https://www.figma.com/proto/vJli2YwMOrfkFeBO5IuCSW?node-id=0-1&t=BytWX534sCKcZ6C6-6",
+    githubUrl: "https://www.figma.com/design/vJli2YwMOrfkFeBO5IuCSW/App-Dev---LH44?m=auto&t=BytWX534sCKcZ6C6-1",
   },
   {
     title: "CMU",
@@ -58,7 +58,7 @@ export function ProjectsSection() {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <FadeIn key={index} delay={400 + index * 200} direction={index % 2 === 0 ? "left" : "right"}>
-                <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2">
+                <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
                   <CardHeader className="p-0">
                     <div className="relative overflow-hidden rounded-t-lg">
                       <img
@@ -66,37 +66,17 @@ export function ProjectsSection() {
                         alt={project.title}
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center space-x-4">
-                        <Button
-                          size="sm"
-                          asChild
-                          className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100"
-                        >
-                          <Link href={project.liveUrl} target="_blank">
-                            <ExternalLink className="h-4 w-4 mr-2" />
-                            Live Demo
-                          </Link>
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          asChild
-                          className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-200 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
-                        >
-                          <Link href={project.githubUrl} target="_blank">
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
-                          </Link>
-                        </Button>
-                      </div>
+                      ...
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 flex flex-col flex-grow">
                     <CardTitle className="mb-2 group-hover:text-primary transition-colors duration-300">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="mb-4 text-pretty">{project.description}</CardDescription>
-                    <div className="flex flex-wrap gap-2">
+                    <CardDescription className="mb-4 text-pretty flex-grow">
+                      {project.description}
+                    </CardDescription>
+                    <div className="flex flex-wrap gap-2 mt-auto">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
                           key={tech}
@@ -110,6 +90,7 @@ export function ProjectsSection() {
                     </div>
                   </CardContent>
                 </Card>
+
               </FadeIn>
             ))}
           </div>
