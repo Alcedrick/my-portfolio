@@ -17,7 +17,7 @@ export function HeroSection() {
 
           <FadeIn delay={400}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-              Full Stack{" "}
+              Junior{" "}
               <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 <AnimatedText text="Developer" delay={800} />
               </span>
