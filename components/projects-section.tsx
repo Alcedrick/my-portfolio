@@ -10,7 +10,7 @@ const projects = [
     title: "LiftApp",
     description:
       "An AI Fitness Trainer that provides personalized workout plans, and diet plans to help users achieve their fitness goals. Also features an admin dashboard for managing users, Vapi AI Voice Agent.",
-    image: "/liftapp.png",
+    image: "/liftapp-new.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Google Gemini AI", "Clerk", "Convex"],
     liveUrl: "https://liftapp-evolved.vercel.app/",
     githubUrl: "https://github.com/Alcedrick/evolved_test_build",
