@@ -11,21 +11,21 @@ export function Footer() {
             <div>
               <h3 className="text-lg font-semibold text-primary mb-4">Alcedrick Garcia</h3>
               <p className="text-muted-foreground text-pretty">
-                Full Stack Developer passionate about creating amazing web experiences.
+                Software Developer passionate about creating amazing web experiences.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <nav className="space-y-2">
-                <Link href="#about" className="block text-muted-foreground hover:text-primary transition-colors">
-                  About
+                <Link href="#experience" className="block text-muted-foreground hover:text-primary transition-colors">
+                  Experience
                 </Link>
                 <Link href="#projects" className="block text-muted-foreground hover:text-primary transition-colors">
                   Projects
                 </Link>
-                <Link href="#skills" className="block text-muted-foreground hover:text-primary transition-colors">
-                  Skills
+                <Link href="#about" className="block text-muted-foreground hover:text-primary transition-colors">
+                  About
                 </Link>
                 <Link href="#contact" className="block text-muted-foreground hover:text-primary transition-colors">
                   Contact
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
 
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground text-sm">
-            <p>&copy; 2025 Alcedrick Garcia. All rights reserved.</p>
+            <p>&copy; 2026 Alcedrick Garcia. All rights reserved.</p>
           </div>
         </div>
       </div>
