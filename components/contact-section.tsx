@@ -43,7 +43,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-muted/30 relative">
+    <section id="contact" className="py-20 relative">
       <FloatingElements />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

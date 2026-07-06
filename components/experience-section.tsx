@@ -3,38 +3,30 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
+    title: "Microsoft 365 Developer Intern",
+    school: "Bangko Sentral ng Pilipinas",
+    period: "January - May 2026",
+    description:
+      "Developed and customized BSP's CPMCO Portal using Power Apps, Dataverse, and Power Automate. Automated business processes, managed enterprise data, and collaborated with stakeholders to improve workflow efficiency and user experience.",
+    technologies: ["Microsoft Power Apps", "Microsoft Automate", "Microsoft Dataverse"],
+  },
+  {
     title: "BS Information Technology",
     school: "Centro Escolar University - Malolos",
     period: "2022 - 2026",
     description:
-      "Lead development of scalable web applications serving 100k+ users. Mentored junior developers and implemented CI/CD pipelines.",
-    technologies: ["President's Lister"],
-  },
-  {
-    title: "ICT - Senior High School",
-    school: "Dr. Yanga's Colleges Inc.",
-    period: "2020 - 2022",
-    description:
-      "Built the company's main product from scratch, including frontend, backend, and database architecture. Collaborated with design team to create intuitive user experiences.",
-    technologies: ["With Honors"],
-  },
-  {
-    title: "Junior High School",
-    school: "Dr. Yanga's Colleges Inc.",
-    period: "2016 - 2020",
-    description:
-      "Developed responsive websites and web applications for various clients. Focused on performance optimization and accessibility.",
-    technologies: ["With Honors"],
-  },
+      "Studied software development, networking, cybersecurity, database management, and systems analysis. Completed academic projects involving Microsoft Power Platform, Dataverse, JavaScript, SQL, and UI/UX prototyping while graduating as a Summa Cum Laude.",
+    technologies: ["Summa Cum Laude"],
+  }
 ]
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-            School <span className="text-primary">Experience</span>
+          <span className="text-primary">Experience</span>
           </h2>
 
           <div className="space-y-8">

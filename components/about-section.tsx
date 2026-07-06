@@ -19,7 +19,7 @@ export function AboutSection() {
               <div>
                 <Card className="hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                   <CardContent className="p-8">
-                    <div className="w-full h-64 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div className="w-full h-90 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 shadow-md">
                       <img src="/me.jpg" alt="" className="w-full h-full object-cover" />
                     </div>
                   </CardContent>
@@ -30,7 +30,7 @@ export function AboutSection() {
             <FadeIn delay={600} direction="right">
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a 4th-year BS Information Technology student at Centro Escolar University. A passionate full-stack developer who is eager to learn and experience building more scalable web
+                  I'm a recently graduated BS Information Technology student at Centro Escolar University - Malolos with Summa Cum Laude honors. A passionate developer who is eager to learn and experience building more scalable web
                   applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
                 </p>
 
@@ -45,13 +45,13 @@ export function AboutSection() {
                       <h3 className="font-semibold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
                         Frontend
                       </h3>
-                      <p className="text-sm text-muted-foreground">React, Next.js, TypeScript, Tailwind CSS</p>
+                      <p className="text-sm text-muted-foreground">React, Next.js, Tailwind CSS</p>
                     </div>
                     <div className="group">
                       <h3 className="font-semibold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
                         Backend
                       </h3>
-                      <p className="text-sm text-muted-foreground">Node.js, Python, PHP, MySQL</p>
+                      <p className="text-sm text-muted-foreground">Typescript, Node.js, Python, PHP, MySQL</p>
                     </div>
                   </div>
                 </FadeIn>
