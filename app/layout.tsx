@@ -8,8 +8,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Alcedrick Garcia - Full Stack Developer",
-  description: "Full Stack Developer specializing in React, Node.js, and modern web technologies",
+  title: "Alcedrick Garcia - Software Developer",
+  description: "Software Developer specializing in React, Node.js, and modern web technologies",
 }
 
 export default function RootLayout({
